@@ -1,4 +1,4 @@
-package org.example;
+package comitheima;
 
 public class HelloWorld {
     public static void main(String[] args) {
