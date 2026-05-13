@@ -7,7 +7,13 @@
       <list>
         <option value="$PROJECT_DIR$/maven-project01/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-web-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-web-01/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/maven-project01/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_26" project-jdk-name="26" project-jdk-type="JavaSDK">
