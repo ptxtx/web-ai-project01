@@ -2,12 +2,14 @@ package comitheima.Dao.impl;
 
 import cn.hutool.core.io.IoUtil;
 import comitheima.Dao.UserDao;
+import org.springframework.stereotype.Component;
 
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class UserDaoImpl implements UserDao {
 
     @Override

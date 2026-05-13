@@ -4,6 +4,7 @@ import cn.hutool.core.io.IoUtil;
 import comitheima.Service.UserService;
 import comitheima.Service.impl.UserServiceImpl;
 import comitheima.pojo.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,9 @@ import java.util.stream.Collectors;
 
 @RestController
 public class UserController {
-    private UserService userService=new UserServiceImpl();
+    //private UserService userService=new UserServiceImpl();
+    @Autowired
+    private UserService userService;
     @RequestMapping("/list")
     public List<User>  list() throws FileNotFoundException {
         List<User> userList = userService.findAll();//调用service获得数据
