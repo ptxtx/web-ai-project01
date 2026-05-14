@@ -18,6 +18,7 @@
           <entry name="$USER_HOME$/Downloads/apache-maven-3.9.15/mvn_repo/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="springboot-web-01" />
+        <module name="springboot-mybatis-quickstart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="26">
@@ -26,6 +27,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-mybatis-quickstart" options="-parameters" />
       <module name="springboot-web-01" options="-parameters" />
       <module name="springboot-web-quickstart" options="-parameters" />
     </option>
