@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-web-quickstart" />
+        <module name="jdbc-demo" />
       </profile>
       <profile name="Annotation profile for springboot-web-01" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

@@ -6,12 +6,14 @@ import comitheima.Service.UserService;
 import comitheima.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
-@Component
+@Service
+//@Component
 public class UserServiceImpl implements UserService {
     //private UserDao userDao=new UserDaoImpl();//接口多态
     @Autowired
