@@ -1,8 +1,7 @@
 package comitheima.mapper;
 
 import comitheima.pojo.User;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -10,4 +9,17 @@ import java.util.List;
 public interface UserMapper {
     @Select("select * from user")
     public List<User> findAll();//查询返回值为User集合
+
+    @Delete("delete from user where id=#{id}")
+    public void deleteById(Integer id);//想接受返回值，则把类型改成Integer
+
+    @Insert("insert into user(username,password,name,age)values(#{username},#{password},#{name},#{age})")
+    public void addUser(User user);
+
+    @Update("update user set username=#{username},password=#{password},name=#{name},age=#{age} where id=#{id}")
+    public void updateUser(User user);
+
+    @Select("select * from user where username=#{username} and password=#{password}")
+    //public User find(@Param("username")String username,@Param("password")String password);  也可以用Param注解给参数命名
+    public User find(User user);
 }

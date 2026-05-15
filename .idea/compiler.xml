@@ -18,6 +18,15 @@
           <entry name="$USER_HOME$/Downloads/apache-maven-3.9.15/mvn_repo/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="springboot-web-01" />
+      </profile>
+      <profile name="Annotation profile for springboot-mybatis-quickstart" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/Downloads/apache-maven-3.9.15/mvn_repo/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$USER_HOME$/Downloads/apache-maven-3.9.15/mvn_repo/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
         <module name="springboot-mybatis-quickstart" />
       </profile>
     </annotationProcessing>
