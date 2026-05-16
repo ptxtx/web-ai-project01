@@ -1,0 +1,24 @@
+#定义一个对象/map集合
+#user:
+#  name: Tom
+#  age: 18
+#  gender: 男
+#
+##定义数组/list/Set集合
+#hobby:
+#  - 吃饭
+#  - 睡觉
+#  - 玩
+
+spring:
+  application:
+    name: springboot-mybatis-quickstart
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/web01
+    username: root
+    password: 727272Ptx
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
